@@ -33,8 +33,8 @@ import java.net.URLEncoder;
 public class WebRequestTask extends AsyncTask<WebRequestTask.WebRequest, Integer, WebRequestTask.WebRequest[]> {
 
     //public static final String WEBSITE = "http://mbp-di-federico:5000";
-    //public static final String WEBSITE = "http://192.168.43.132:5000";
-    public static final String WEBSITE = "http://192.168.43.231:5000";
+    public static final String WEBSITE = "http://192.168.43.132:5000";
+    //public static final String WEBSITE = "http://192.168.43.231:5000";
     //public static final String WEBSITE = "http://federico:5000";
     public static final String POST = "POST";
     public static final String GET = "GET";

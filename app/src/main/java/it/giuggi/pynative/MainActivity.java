@@ -47,10 +47,11 @@ public class MainActivity extends AppCompatActivity implements INavigationContro
 
     public void loadLayout(JSONObject obj)
     {
+        mainContainer.removeAllViews();
+
         JSONLayout layout = new JSONLayout(this, this, obj);
 
         View v = layout.getView(this);
-        mainContainer.removeAllViews();
         mainContainer.addView(v);
     }
 }

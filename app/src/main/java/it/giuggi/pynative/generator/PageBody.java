@@ -76,7 +76,7 @@ public class PageBody extends Navigable
         else if(type.equalsIgnoreCase(EL_BUTTON))
         {
             Button button = new Button(context);
-            //TODO set action
+
             JSONObject action = obj.getJSONObject(ATTR_ACTION);
 
             String text = obj.getString(ATTR_TEXT);
