@@ -14,6 +14,8 @@ def  interfaceBuilder():
 	requestedScreenname = request.args.get('screenname')
 	requestedView = ViewBuilder(requestedScreenname, requestedScreenname)
 
+        requestedView.addElement(ElementBuilder.createTextView("77", "Sono la schermata %s" % requestedScreenname))
+
         for i in range(0, 10):
 		requestedView.addElement(ElementBuilder.createTextView("%s" % (i * 2), "Asciugamani"))
 		requestedView.addElement(ElementBuilder.createGotoButton("%d" % (i * 2 + 1), "GOTO %d" % i, "screen%d" % i))
